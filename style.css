@@ -65,6 +65,7 @@ section p{
 }
 section p span{
     color:  hsl(243, 100%, 93%);
+    Font-size:.4em;
 }
 .bar{
     background-color:hsl(229, 57%, 11%) ;
