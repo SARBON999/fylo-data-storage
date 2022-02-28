@@ -1,0 +1,166 @@
+@font-face{
+    font-family: "Raleway";
+    src: url(Raleway/Raleway-VariableFont_wght.ttf);
+
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family:Raleway ;
+}
+body{
+    background-color:hsl(229, 57%, 11%) ;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/bg-desktop.png") ;
+    background-repeat: no-repeat;
+    background-position-y:150%;
+    
+}
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+header{
+    min-width: 340px;
+    background-color: hsl(228, 56%, 26%);
+     min-height: 116px;
+     padding:39px  ;
+     border-radius: 10px 80px 10px 10px;
+}
+header .logo{
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 130px; 
+}
+header div  img{
+    margin-right: 18px;
+    width: 4;
+    z-index: 1000;
+    background-color: hsl(229, 57%, 11%);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+
+
+section{
+    background-color: hsl(228, 56%, 26%);
+    min-width: 500px;
+    padding: 26px;
+    min-height: 142px;
+    position: relative;
+    top: 31px;
+    border-radius:10px;
+}
+section p{
+    color:  hsl(229, 7%, 55%);
+    font-size: .7em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+section p span{
+    color:  hsl(243, 100%, 93%);
+}
+.bar{
+    background-color:hsl(229, 57%, 11%) ;
+    width: 100%;
+    padding: 1%;
+    border-radius: 20px;
+}
+ .bar .insidebar {
+    display: flex; 
+    background-image:linear-gradient( hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    border-radius: 20px;
+    width: 81.5%;
+    justify-content: flex-end;
+}
+.bar .insidebar .whiteball{
+    height: 10px;
+    background-color: white;
+    width: 10px;
+    border-radius:10px;
+}
+  section .G-ren{
+    display: flex;
+    justify-content: space-between;
+    font-size: .7em;
+    margin-top: 7px;
+    color: hsl(243, 100%, 93%); 
+    font-weight: 700;
+}
+section .left{
+    background-color: white;
+   
+    padding: 10px 30px;
+    position: absolute;
+    border-radius: 9px 9px 0;
+    right: 20px;
+    top: -40px;
+}
+section .left p {
+font-size:.4em ;
+ color: hsl(229, 7%, 55%);
+ text-transform: uppercase;
+}
+.left p  span{
+    color: hsl(229, 57%, 11%);
+    font-size: 3em;
+    font-weight: bold;
+    margin-right: 7px;
+}
+section .left::after{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid 20px transparent;
+    border-top: solid 10px hsl(0, 0%, 100%);
+    border-right: solid 20px hsl(0, 0%, 100%);
+    background: none;
+    right: 0;
+    bottom: -20px;
+}
+
+footer{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: green;
+}
+@media(max-width:600px){
+    body{
+        background-image: url("images/bg-mobile.png");
+        background-size: cover;
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        min-width: 340px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+    
+       
+    }
+    section .left{
+        margin-top: 20px;
+        border-radius: 9px;
+        right:100px;
+        top:110px ;
+
+    }
+    
+    section .left::after{
+        display: none;
+    }
+}
